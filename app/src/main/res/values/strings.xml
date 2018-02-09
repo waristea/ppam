@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ActivityLearning</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string-array name="items">
+        <item>peach</item>
+        <item>tomato</item>
+        <item>apple</item>
+    </string-array>
+    <string-array name="prices">
+        <item>$0.5</item>
+        <item>$1.5</item>
+        <item>$2.5</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>Fresh peach from Sumatra</item>
+        <item>Fresh tomato from Java</item>
+        <item>Fresh apple from Papua</item>
+    </string-array>
+    <string name="title_activity_new_alarm">NewAlarmActivity</string>
+</resources>
