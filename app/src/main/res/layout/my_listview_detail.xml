@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:backgroundTint="#FEFBDE"
+    >
 
     <TextView
         android:id="@+id/timeTextView"
@@ -13,28 +17,33 @@
         android:layout_marginStart="46dp"
         android:layout_marginTop="16dp"
         android:text="Name"
-        android:textSize="24sp" />
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/descriptionTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Description"
-        android:layout_below="@+id/timeTextView"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/alarmActiveToggle"
         android:layout_alignLeft="@+id/timeTextView"
+        android:layout_alignRight="@+id/alarmActiveToggle"
         android:layout_alignStart="@+id/timeTextView"
-        android:layout_alignRight="@+id/activeTextView"
-        android:layout_alignEnd="@+id/activeTextView" />
+        android:layout_below="@+id/timeTextView"
+        android:text="Description"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/activeTextView"
+    <Switch
+        android:id="@+id/alarmActiveToggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:text="Price"
-        android:textAlignment="viewEnd"
-        android:layout_alignBottom="@+id/timeTextView"
+        android:layout_above="@+id/descriptionTextView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:checked="false"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
 </RelativeLayout>

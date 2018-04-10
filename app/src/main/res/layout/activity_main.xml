@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.william.activitylearning.MainActivity">
+    android:background="#37AEE4"
+    android:backgroundTint="#FEFBDE"
+    android:backgroundTintMode="multiply"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context="com.example.william.alarmy.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/addAlarmButton"
@@ -13,23 +17,20 @@
         android:layout_marginBottom="28dp"
         android:layout_marginRight="28dp"
         android:clickable="true"
-        app:backgroundTint="@android:color/background_light"
+        app:backgroundTint="@android:color/holo_green_light"
         app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_menu_add" />
 
     <ListView
         android:id="@+id/alarmListView"
         android:layout_width="367dp"
-        android:layout_height="399dp"
+        android:layout_height="571dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

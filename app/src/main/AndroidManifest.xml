@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.william.activitylearning">
+    package="com.example.william.alarmy">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme">
+            android:name="com.example.william.alarmy.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity" />
+        <activity android:name="com.example.william.alarmy.DetailActivity" />
         <activity
-            android:name=".NewAlarmActivity"
+            android:name="com.example.william.alarmy.NewAlarmActivity"
             android:label="@string/title_activity_new_alarm"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="com.example.william.alarmy.AlarmReceiver" />
+
+        <service
+            android:name="com.example.william.alarmy.RingtonePlayingService"
+            android:enabled="true"/>
+
+        <activity android:name="com.example.william.alarmy.ActiveAlarmActivity"/>
     </application>
 
 </manifest>

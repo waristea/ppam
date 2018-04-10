@@ -1,4 +1,4 @@
-package com.example.william.activitylearning;
+package com.example.william.alarmy;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.william.activitylearning", appContext.getPackageName());
+        assertEquals("com.example.william.alarmy", appContext.getPackageName());
     }
 }

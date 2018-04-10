@@ -2,128 +2,138 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.william.activitylearning.NewAlarmActivity"
+
+    tools:context="com.example.william.alarmy.NewAlarmActivity"
     tools:showIn="@layout/activity_new_alarm">
 
-    <ToggleButton
-        android:id="@+id/mondayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:text="ToggleButton"
-        android:textOff="M"
-        android:textOn="M"
-        app:layout_constraintEnd_toStartOf="@+id/tuesdayToggle"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <ToggleButton
-        android:id="@+id/tuesdayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:text="ToggleButton"
-        android:textOff="T"
-        android:textOn="T"
-        app:layout_constraintEnd_toStartOf="@+id/wednesdayToggle"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mondayToggle"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <ToggleButton
-        android:id="@+id/thursdayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:text="ToggleButton"
-        android:textOff="T"
-        android:textOn="T"
-        app:layout_constraintEnd_toStartOf="@+id/fridayToggle"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/wednesdayToggle"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <ToggleButton
-        android:id="@+id/wednesdayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:text="ToggleButton"
-        android:textOff="W"
-        android:textOn="W"
-        app:layout_constraintEnd_toStartOf="@+id/thursdayToggle"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tuesdayToggle"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <ToggleButton
-        android:id="@+id/saturdayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:text="ToggleButton"
-        android:textOff="S"
-        android:textOn="S"
-        app:layout_constraintEnd_toStartOf="@+id/sundayToggle"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/fridayToggle"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <ToggleButton
-        android:id="@+id/fridayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:text="ToggleButton"
-        android:textOff="F"
-        android:textOn="F"
-        app:layout_constraintEnd_toStartOf="@+id/saturdayToggle"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/thursdayToggle"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <ToggleButton
-        android:id="@+id/sundayToggle"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:text="ToggleButton"
-        android:textOff="S"
-        android:textOn="S"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/saturdayToggle"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-    <TimePicker
-        android:id="@+id/timePicker"
-        android:layout_width="0dp"
+    <TableLayout
+        android:id="@+id/confirmationButtonTable"
+        android:layout_marginTop="7dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/cancelButton"
-        android:layout_width="wrap_content"
+        <TableRow
+            android:id="@+id/first_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_marginRight="-3.5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@android:string/cancel"
+                tools:text="@android:string/cancel"/>
+            <Button
+                android:id="@+id/ok_alarm_button"
+                android:layout_marginLeft="-3.5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@android:string/ok"
+                tools:text="@android:string/ok"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@android:string/cancel"
+        android:orientation="vertical"
+
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mondayToggle"
-        tools:text="@android:string/cancel" />
+        app:layout_constraintTop_toBottomOf="@+id/confirmationButtonTable">
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="clock"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@android:string/ok"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sundayToggle"
-        tools:text="@android:string/ok" />
+        <!--
+        android:background="#37AEE4"
+            android:backgroundTint="#FEFBDE"
+            android:backgroundTintMode="multiply"
+            android:headerBackground="@android:color/transparent"
+            android:numbersSelectorColor="@android:color/white"
+            android:numbersTextColor="@android:color/white"
+            android:numbersBackgroundColor="@android:color/white"
+            android:numbersInnerTextColor="@android:color/white"
+        -->
+        <LinearLayout
+            android:id="@+id/daysLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ToggleButton
+                android:id="@+id/mondayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="M"
+                android:textOn="M"/>
+
+            <ToggleButton
+                android:id="@+id/tuesdayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="T"
+                android:textOn="T"/>
+
+            <ToggleButton
+                android:id="@+id/wednesdayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="W"
+                android:textOn="W" />
+
+            <ToggleButton
+                android:id="@+id/thursdayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="T"
+                android:textOn="T" />
+
+            <ToggleButton
+                android:id="@+id/fridayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="F"
+                android:textOn="F" />
+
+            <ToggleButton
+                android:id="@+id/saturdayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="S"
+                android:textOn="S" />
+
+            <ToggleButton
+                android:id="@+id/sundayToggle"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOff="S"
+                android:textOn="S" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
 </android.support.constraint.ConstraintLayout>

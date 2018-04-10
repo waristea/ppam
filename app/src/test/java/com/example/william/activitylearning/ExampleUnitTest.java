@@ -1,4 +1,4 @@
-package com.example.william.activitylearning;
+package com.example.william.alarmy;
 
 import org.junit.Test;
 

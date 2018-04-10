@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="D:\Workbench\ActivityLearning\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="D:\Workbench\alarmy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="D:\Workbench\ActivityLearning\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_fc8cb05c8e32f2b33ae59ee494392725bbd258f0\classes.dex" />
+        <dex dex="D:\Workbench\alarmy\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_fc8cb05c8e32f2b33ae59ee494392725bbd258f0\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\Workbench\ActivityLearning\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="D:\Workbench\alarmy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3916bd76769387d665b6c509f7ad211c3297289b">
-        <dex dex="D:\Workbench\ActivityLearning\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_81f85dbc8bd6128ee8560caecc10aa1e0c9558a6\classes.dex" />
+        <dex dex="D:\Workbench\alarmy\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_81f85dbc8bd6128ee8560caecc10aa1e0c9558a6\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -26,7 +26,7 @@
         optimize="true"
         revision="26.0.1"
         sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="D:\Workbench\ActivityLearning\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ed47a0d0a3ffc4714efea80ba8beff77e60de833\classes.dex" />
+        <dex dex="D:\Workbench\alarmy\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ed47a0d0a3ffc4714efea80ba8beff77e60de833\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -35,7 +35,7 @@
         optimize="true"
         revision="26.0.1"
         sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="D:\Workbench\ActivityLearning\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_811b6c8ae8e4f0e5a511eadaee6647bd2ffa107f\classes.dex" />
+        <dex dex="D:\Workbench\alarmy\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_811b6c8ae8e4f0e5a511eadaee6647bd2ffa107f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -44,7 +44,7 @@
         optimize="true"
         revision="26.0.1"
         sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="D:\Workbench\ActivityLearning\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fe9bd8bd8d79f91371ab9e8f2d638de4373b3ffe\classes.dex" />
+        <dex dex="D:\Workbench\alarmy\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fe9bd8bd8d79f91371ab9e8f2d638de4373b3ffe\classes.dex" />
     </item>
 
 </items>
